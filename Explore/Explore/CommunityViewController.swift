@@ -19,7 +19,7 @@ class CommunityViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        let _ = self.navigationController?.popViewController(animated: true)
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
