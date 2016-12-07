@@ -14,6 +14,7 @@
 		D80FAAFF1DF728E90026BF9C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80FAAFE1DF728E90026BF9C /* WelcomeViewController.swift */; };
 		D83BB1FD1DF75A400026DD59 /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83BB1FC1DF75A400026DD59 /* CommunityViewController.swift */; };
 		D84CAF821DF776AA00A9C2E1 /* LocalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84CAF811DF776AA00A9C2E1 /* LocalViewController.swift */; };
+		D883B2DA1DF7DEC20004BC2F /* CreateNewActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2D91DF7DEC20004BC2F /* CreateNewActivityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D80FAAFE1DF728E90026BF9C /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		D83BB1FC1DF75A400026DD59 /* CommunityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
 		D84CAF811DF776AA00A9C2E1 /* LocalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalViewController.swift; sourceTree = "<group>"; };
+		D883B2D91DF7DEC20004BC2F /* CreateNewActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewActivityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				D83BB1FC1DF75A400026DD59 /* CommunityViewController.swift */,
+				D883B2D91DF7DEC20004BC2F /* CreateNewActivityViewController.swift */,
 			);
 			name = Community;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D80FAAEC1DF7249F0026BF9C /* AppDelegate.swift in Sources */,
+				D883B2DA1DF7DEC20004BC2F /* CreateNewActivityViewController.swift in Sources */,
 				D80FAAFF1DF728E90026BF9C /* WelcomeViewController.swift in Sources */,
 				D84CAF821DF776AA00A9C2E1 /* LocalViewController.swift in Sources */,
 				D83BB1FD1DF75A400026DD59 /* CommunityViewController.swift in Sources */,
