@@ -21,8 +21,9 @@
 		D883B2E21DF87DAB0004BC2F /* ActivitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2E11DF87DAB0004BC2F /* ActivitiesTableViewCell.swift */; };
 		D883B2E41DF88B070004BC2F /* PlacesActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2E31DF88B070004BC2F /* PlacesActivityDetailViewController.swift */; };
 		D883B2E61DF892060004BC2F /* CommunityActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2E51DF892060004BC2F /* CommunityActivities.swift */; };
-		D883B2EB1DF8931C0004BC2F /* APILocalActivites.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2EA1DF8931C0004BC2F /* APILocalActivites.swift */; };
+		D883B2EB1DF8931C0004BC2F /* APILocalPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2EA1DF8931C0004BC2F /* APILocalPlaces.swift */; };
 		D883B2ED1DF893CA0004BC2F /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2EC1DF893CA0004BC2F /* Activities.swift */; };
+		D883B3121DF8BFBA0004BC2F /* LocalActivitiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B3111DF8BFBA0004BC2F /* LocalActivitiesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +43,9 @@
 		D883B2E11DF87DAB0004BC2F /* ActivitiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewCell.swift; sourceTree = "<group>"; };
 		D883B2E31DF88B070004BC2F /* PlacesActivityDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesActivityDetailViewController.swift; sourceTree = "<group>"; };
 		D883B2E51DF892060004BC2F /* CommunityActivities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommunityActivities.swift; path = ../CommunityActivities.swift; sourceTree = "<group>"; };
-		D883B2EA1DF8931C0004BC2F /* APILocalActivites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APILocalActivites.swift; path = ../APILocalActivites.swift; sourceTree = "<group>"; };
+		D883B2EA1DF8931C0004BC2F /* APILocalPlaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APILocalPlaces.swift; path = ../APILocalPlaces.swift; sourceTree = "<group>"; };
 		D883B2EC1DF893CA0004BC2F /* Activities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Activities.swift; path = ../Activities.swift; sourceTree = "<group>"; };
+		D883B3111DF8BFBA0004BC2F /* LocalActivitiesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalActivitiesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				D80FAAFE1DF728E90026BF9C /* WelcomeViewController.swift */,
+				D883B3111DF8BFBA0004BC2F /* LocalActivitiesController.swift */,
 				D883B2E71DF892F90004BC2F /* Models */,
 				D84CAF831DF776D200A9C2E1 /* Local */,
 				D84CAF7E1DF7602000A9C2E1 /* Community */,
@@ -123,7 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				D883B2E51DF892060004BC2F /* CommunityActivities.swift */,
-				D883B2EA1DF8931C0004BC2F /* APILocalActivites.swift */,
+				D883B2EA1DF8931C0004BC2F /* APILocalPlaces.swift */,
 				D883B2EC1DF893CA0004BC2F /* Activities.swift */,
 			);
 			name = Models;
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D883B3121DF8BFBA0004BC2F /* LocalActivitiesController.swift in Sources */,
 				D883B2E41DF88B070004BC2F /* PlacesActivityDetailViewController.swift in Sources */,
 				D883B2ED1DF893CA0004BC2F /* Activities.swift in Sources */,
 				D80FAAEC1DF7249F0026BF9C /* AppDelegate.swift in Sources */,
@@ -214,7 +218,7 @@
 				D883B2E61DF892060004BC2F /* CommunityActivities.swift in Sources */,
 				D883B2E21DF87DAB0004BC2F /* ActivitiesTableViewCell.swift in Sources */,
 				D83BB1FD1DF75A400026DD59 /* CommunityViewController.swift in Sources */,
-				D883B2EB1DF8931C0004BC2F /* APILocalActivites.swift in Sources */,
+				D883B2EB1DF8931C0004BC2F /* APILocalPlaces.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

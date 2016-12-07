@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreLocation
 
-class WelcomeViewController: UIViewController {
+class WelcomeViewController: UIViewController, CLLocationManagerDelegate {
     
     //============================
     //  Mark: - Outlets
@@ -19,10 +20,22 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var localActivitiesView: UIView!
     @IBOutlet weak var communityActivitiesView: UIView!
     
+    let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Hides navigation bar
         self.navigationController?.navigationBar.isHidden = true
+        
+        // Location Services
+        
+        self.locationManager.delegate = self
+        
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        
+        
     }
     
     //============================

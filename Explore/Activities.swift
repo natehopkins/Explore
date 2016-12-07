@@ -9,6 +9,13 @@
 import Foundation
 
 class Activities {
+    
+    private let nameKey = "name"
+    private let activityTypeKey = "activity_type_id"
+    private let urlKey = "url"
+    private let descriptionKey = "description"
+    private let thumbnailImageKey = "thumbnail"
+    
     let name: String
     let activityType: String
     let url: String
@@ -21,5 +28,20 @@ class Activities {
         self.url = url
         self.description = description
         self.thumbnailImage = thumbnailImage
+    }
+    
+    init?(dictionary: [String: Any]) {
+        guard let name = dictionary[nameKey] as? String,
+            let activityType = dictionary[activityTypeKey] as? String,
+            let url = dictionary[urlKey] as? String,
+            let description = dictionary[descriptionKey] as? String,
+            let thumbnailImage = dictionary[thumbnailImageKey] as? String else { return nil }
+        
+        self.name = name
+        self.activityType = activityType
+        self.url = url
+        self.description = description
+        self.thumbnailImage = thumbnailImage
+
     }
 }
