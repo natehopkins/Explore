@@ -1,35 +1,30 @@
 //
-//  CreateNewActivityViewController.swift
+//  ActivityDetailViewController.swift
 //  Explore
 //
-//  Created by Nathan Hopkins on 12/6/16.
+//  Created by Nathan Hopkins on 12/7/16.
 //  Copyright © 2016 NathanHopkins. All rights reserved.
 //
 
 import UIKit
 
-class CreateNewActivityViewController: UIViewController {
-    
+class ActivityDetailViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view.
     }
-
-
+    
     @IBAction func backButtonTapped(_ sender: Any) {
         let _ = navigationController?.popViewController(animated: true)
     }
+    
 
-    @IBAction func addButtonTapped(_ sender: Any) {
-        
-        // Do Stuff
-        // Clear TextFields
-        // Pop
-        
-        let _ = navigationController?.popViewController(animated: true)
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
-
     
 
     /*

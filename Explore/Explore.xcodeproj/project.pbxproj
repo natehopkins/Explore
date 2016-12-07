@@ -15,6 +15,11 @@
 		D83BB1FD1DF75A400026DD59 /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83BB1FC1DF75A400026DD59 /* CommunityViewController.swift */; };
 		D84CAF821DF776AA00A9C2E1 /* LocalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84CAF811DF776AA00A9C2E1 /* LocalViewController.swift */; };
 		D883B2DA1DF7DEC20004BC2F /* CreateNewActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2D91DF7DEC20004BC2F /* CreateNewActivityViewController.swift */; };
+		D883B2DC1DF86B020004BC2F /* CommunityDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2DB1DF86B020004BC2F /* CommunityDetailTableViewController.swift */; };
+		D883B2DE1DF878410004BC2F /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2DD1DF878410004BC2F /* ActivityDetailViewController.swift */; };
+		D883B2E01DF87A4B0004BC2F /* PlacesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2DF1DF87A4B0004BC2F /* PlacesDetailViewController.swift */; };
+		D883B2E21DF87DAB0004BC2F /* ActivitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2E11DF87DAB0004BC2F /* ActivitiesTableViewCell.swift */; };
+		D883B2E41DF88B070004BC2F /* PlacesActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2E31DF88B070004BC2F /* PlacesActivityDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		D83BB1FC1DF75A400026DD59 /* CommunityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
 		D84CAF811DF776AA00A9C2E1 /* LocalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalViewController.swift; sourceTree = "<group>"; };
 		D883B2D91DF7DEC20004BC2F /* CreateNewActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewActivityViewController.swift; sourceTree = "<group>"; };
+		D883B2DB1DF86B020004BC2F /* CommunityDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommunityDetailTableViewController.swift; path = ../CommunityDetailTableViewController.swift; sourceTree = "<group>"; };
+		D883B2DD1DF878410004BC2F /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
+		D883B2DF1DF87A4B0004BC2F /* PlacesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesDetailViewController.swift; path = ../PlacesDetailViewController.swift; sourceTree = "<group>"; };
+		D883B2E11DF87DAB0004BC2F /* ActivitiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewCell.swift; sourceTree = "<group>"; };
+		D883B2E31DF88B070004BC2F /* PlacesActivityDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesActivityDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +95,8 @@
 			children = (
 				D83BB1FC1DF75A400026DD59 /* CommunityViewController.swift */,
 				D883B2D91DF7DEC20004BC2F /* CreateNewActivityViewController.swift */,
+				D883B2DB1DF86B020004BC2F /* CommunityDetailTableViewController.swift */,
+				D883B2DD1DF878410004BC2F /* ActivityDetailViewController.swift */,
 			);
 			name = Community;
 			sourceTree = "<group>";
@@ -93,6 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				D84CAF811DF776AA00A9C2E1 /* LocalViewController.swift */,
+				D883B2DF1DF87A4B0004BC2F /* PlacesDetailViewController.swift */,
+				D883B2E11DF87DAB0004BC2F /* ActivitiesTableViewCell.swift */,
+				D883B2E31DF88B070004BC2F /* PlacesActivityDetailViewController.swift */,
 			);
 			name = Local;
 			sourceTree = "<group>";
@@ -170,10 +185,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D883B2E41DF88B070004BC2F /* PlacesActivityDetailViewController.swift in Sources */,
 				D80FAAEC1DF7249F0026BF9C /* AppDelegate.swift in Sources */,
 				D883B2DA1DF7DEC20004BC2F /* CreateNewActivityViewController.swift in Sources */,
+				D883B2E01DF87A4B0004BC2F /* PlacesDetailViewController.swift in Sources */,
+				D883B2DE1DF878410004BC2F /* ActivityDetailViewController.swift in Sources */,
+				D883B2DC1DF86B020004BC2F /* CommunityDetailTableViewController.swift in Sources */,
 				D80FAAFF1DF728E90026BF9C /* WelcomeViewController.swift in Sources */,
 				D84CAF821DF776AA00A9C2E1 /* LocalViewController.swift in Sources */,
+				D883B2E21DF87DAB0004BC2F /* ActivitiesTableViewCell.swift in Sources */,
 				D83BB1FD1DF75A400026DD59 /* CommunityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
