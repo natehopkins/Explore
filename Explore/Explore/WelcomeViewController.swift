@@ -33,9 +33,6 @@ class WelcomeViewController: UIViewController, CLLocationManagerDelegate {
         self.locationManager.delegate = self
         
         self.locationManager.requestWhenInUseAuthorization()
-        
-        
-        
     }
     
     //============================

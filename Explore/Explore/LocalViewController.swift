@@ -7,17 +7,23 @@
 //
 
 import UIKit
+import CoreLocation
 
-class LocalViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class LocalViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, CLLocationManagerDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        locationManager.delegate = self
+        
         self.navigationController?.navigationBar.isHidden = true
         createCollectionViewCellLayout()
+        
+        loadPlaces()
         
     }
     
@@ -25,7 +31,25 @@ class LocalViewController: UIViewController, UICollectionViewDelegate, UICollect
         let _ = self.navigationController?.popViewController(animated: true)
     }
     
- 
+    func loadPlaces() {
+        
+        locationManager.requestLocation()
+        
+        guard let latitude = locationManager.location?.coordinate.latitude else { print("Error with lat"); return }
+        guard let longitude = locationManager.location?.coordinate.longitude else { print("error with lon"); return }
+        
+        
+        LocalPlacesController.fetchStuffWith(lat: Float(latitude), lon: Float(longitude))
+    }
+    // Delegate Methods
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        // Do stuff
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Errors: \(error.localizedDescription)")
+    }
+    //
 
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

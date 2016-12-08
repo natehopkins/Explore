@@ -8,7 +8,7 @@
 
 import Foundation
 
-class APILocalActivites {
+class APILocalPlaces {
     
     private let nameKey = "name"
     private let cityKey = "city"
@@ -58,8 +58,5 @@ class APILocalActivites {
             guard let initializedActivity = Activities(dictionary: activity) else { return }
             arrayOfActivities.append(initializedActivity)
         }
-        
-       
-        
     }
 }
