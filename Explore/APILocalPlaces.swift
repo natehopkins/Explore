@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+import MapKit
 
 class APILocalPlaces {
     
@@ -26,6 +28,8 @@ class APILocalPlaces {
     let locationLon: Float
     var arrayOfActivities: [Activities]
     
+    var placeImage: UIImage? = nil
+    
     init(name: String, city: String, state: String, country: String, locationLat: Float, locationLon: Float, arrayOfActivities: [Activities]) {
         
         self.name = name
@@ -39,24 +43,23 @@ class APILocalPlaces {
     
     init?(dictionary: [String: Any]) {
         guard let name = dictionary[nameKey] as? String,
-            let city = dictionary[cityKey] as? String,
-            let state = dictionary[stateKey] as? String,
-            let country = dictionary[countryKey] as? String,
             let locationLat = dictionary[locationLatKey] as? Float,
             let locationLon = dictionary[locationLonKey] as? Float,
             let activityArray = dictionary[arrayOfActivitiesKey] as? [[String: Any]] else { return nil }
         
         self.name = name
-        self.city = city
-        self.state = state
-        self.country = country
+        self.city = dictionary[cityKey] as? String ?? "No city info avaliable"
+        self.state = dictionary[stateKey] as? String ?? "No state info avaliable"
+        self.country = dictionary[countryKey] as? String ?? "No country info avaliable"
         self.locationLat = locationLat
         self.locationLon = locationLon
         self.arrayOfActivities = []
         
-        for activity in activityArray {
-            guard let initializedActivity = Activities(dictionary: activity) else { return }
-            arrayOfActivities.append(initializedActivity)
-        }
+        if activityArray.count > 0 {
+            for activity in activityArray {
+                guard let initializedActivity = Activities(dictionary: activity) else { return }
+                arrayOfActivities.append(initializedActivity)
+            }
+        } else { print("Doesn't have activities"); return nil }
     }
 }

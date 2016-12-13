@@ -41,7 +41,6 @@ class NetworkController {
         // Create and "resume" (aka run) the task
         
         let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            
             completion?(data, error)
         }
         

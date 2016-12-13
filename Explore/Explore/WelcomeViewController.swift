@@ -25,6 +25,8 @@ class WelcomeViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //print(LocalPlacesController.arrayOfAPILocalActivities.count)
+        
         // Hides navigation bar
         self.navigationController?.navigationBar.isHidden = true
         

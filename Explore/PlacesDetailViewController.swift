@@ -13,6 +13,9 @@ class PlacesDetailViewController: UIViewController, UITableViewDelegate, UITable
     
     @IBOutlet weak var tableView: UITableView!
     
+    var place: APILocalPlaces?
+    var activities: [Activities]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,29 +36,37 @@ class PlacesDetailViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        guard let numberOfActivities = activities?.count else { return 0 }
+        return numberOfActivities
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "activityCell") as? ActivitiesTableViewCell else { return UITableViewCell() }
+        guard let activity = activities?[indexPath.row], let place = place else { return UITableViewCell() }
         
-        cell.backgroundImage.image = #imageLiteral(resourceName: "Hiking")
-        cell.nameLabel.text = "Name of activity here"
-        cell.locationLabel.text = "Location of activity here"
+        cell.updateWith(place: place, activity: activity)
         
         return cell
     }
 
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "activityToDetail" {
+            if let destinationVC = segue.destination as? PlacesActivityDetailViewController {
+                if let indexPath = tableView.indexPathForSelectedRow {
+                    guard let place = place else { return }
+                    guard let activity = activities?[indexPath.row] else { return }
+                    
+                    destinationVC.place = place
+                    destinationVC.activity = activity
+                }
+            }
+        }
     }
-    */
-
 }

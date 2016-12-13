@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D80405CA1DFF586700D3636C /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80405C91DFF586700D3636C /* DetailTableViewController.swift */; };
 		D80FAAEC1DF7249F0026BF9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80FAAEB1DF7249F0026BF9C /* AppDelegate.swift */; };
 		D80FAAF11DF7249F0026BF9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80FAAEF1DF7249F0026BF9C /* Main.storyboard */; };
 		D80FAAF31DF7249F0026BF9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80FAAF21DF7249F0026BF9C /* Assets.xcassets */; };
@@ -25,9 +26,12 @@
 		D883B2ED1DF893CA0004BC2F /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2EC1DF893CA0004BC2F /* Activities.swift */; };
 		D883B3141DF9CA3C0004BC2F /* LocalPlacesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B3131DF9CA3C0004BC2F /* LocalPlacesController.swift */; };
 		D883B3161DF9CEA20004BC2F /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B3151DF9CEA20004BC2F /* NetworkController.swift */; };
+		D883B3181DF9FAD20004BC2F /* PlacesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B3171DF9FAD20004BC2F /* PlacesCollectionViewCell.swift */; };
+		D883B31A1DFB68E80004BC2F /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B3191DFB68E80004BC2F /* ImageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D80405C91DFF586700D3636C /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		D80FAAE81DF7249F0026BF9C /* Explore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Explore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D80FAAEB1DF7249F0026BF9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D80FAAF01DF7249F0026BF9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 		D883B2EC1DF893CA0004BC2F /* Activities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Activities.swift; path = ../Activities.swift; sourceTree = "<group>"; };
 		D883B3131DF9CA3C0004BC2F /* LocalPlacesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalPlacesController.swift; sourceTree = "<group>"; };
 		D883B3151DF9CEA20004BC2F /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkController.swift; path = ../NetworkController.swift; sourceTree = "<group>"; };
+		D883B3171DF9FAD20004BC2F /* PlacesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesCollectionViewCell.swift; sourceTree = "<group>"; };
+		D883B3191DFB68E80004BC2F /* ImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +86,12 @@
 		D80FAAEA1DF7249F0026BF9C /* Explore */ = {
 			isa = PBXGroup;
 			children = (
-				D883B3151DF9CEA20004BC2F /* NetworkController.swift */,
+				D80FAAEF1DF7249F0026BF9C /* Main.storyboard */,
 				D80FAAFE1DF728E90026BF9C /* WelcomeViewController.swift */,
 				D883B2E71DF892F90004BC2F /* Models */,
 				D883B3131DF9CA3C0004BC2F /* LocalPlacesController.swift */,
 				D84CAF831DF776D200A9C2E1 /* Local */,
+				D883B31B1DFB68F40004BC2F /* Network Stuff */,
 				D84CAF7E1DF7602000A9C2E1 /* Community */,
 				D80FAAFD1DF725950026BF9C /* Resources */,
 			);
@@ -94,7 +101,6 @@
 		D80FAAFD1DF725950026BF9C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D80FAAEF1DF7249F0026BF9C /* Main.storyboard */,
 				D80FAAEB1DF7249F0026BF9C /* AppDelegate.swift */,
 				D80FAAF21DF7249F0026BF9C /* Assets.xcassets */,
 				D80FAAF41DF7249F0026BF9C /* LaunchScreen.storyboard */,
@@ -118,9 +124,11 @@
 			isa = PBXGroup;
 			children = (
 				D84CAF811DF776AA00A9C2E1 /* LocalViewController.swift */,
+				D883B3171DF9FAD20004BC2F /* PlacesCollectionViewCell.swift */,
 				D883B2DF1DF87A4B0004BC2F /* PlacesDetailViewController.swift */,
 				D883B2E11DF87DAB0004BC2F /* ActivitiesTableViewCell.swift */,
 				D883B2E31DF88B070004BC2F /* PlacesActivityDetailViewController.swift */,
+				D80405C91DFF586700D3636C /* DetailTableViewController.swift */,
 			);
 			name = Local;
 			sourceTree = "<group>";
@@ -128,11 +136,20 @@
 		D883B2E71DF892F90004BC2F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D883B2E51DF892060004BC2F /* CommunityActivities.swift */,
 				D883B2EA1DF8931C0004BC2F /* APILocalPlaces.swift */,
 				D883B2EC1DF893CA0004BC2F /* Activities.swift */,
+				D883B2E51DF892060004BC2F /* CommunityActivities.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		D883B31B1DFB68F40004BC2F /* Network Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				D883B3151DF9CEA20004BC2F /* NetworkController.swift */,
+				D883B3191DFB68E80004BC2F /* ImageController.swift */,
+			);
+			name = "Network Stuff";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,11 +233,14 @@
 				D883B3161DF9CEA20004BC2F /* NetworkController.swift in Sources */,
 				D883B2E01DF87A4B0004BC2F /* PlacesDetailViewController.swift in Sources */,
 				D883B2DE1DF878410004BC2F /* ActivityDetailViewController.swift in Sources */,
+				D883B3181DF9FAD20004BC2F /* PlacesCollectionViewCell.swift in Sources */,
 				D883B2DC1DF86B020004BC2F /* CommunityDetailTableViewController.swift in Sources */,
 				D80FAAFF1DF728E90026BF9C /* WelcomeViewController.swift in Sources */,
 				D84CAF821DF776AA00A9C2E1 /* LocalViewController.swift in Sources */,
+				D80405CA1DFF586700D3636C /* DetailTableViewController.swift in Sources */,
 				D883B2E61DF892060004BC2F /* CommunityActivities.swift in Sources */,
 				D883B2E21DF87DAB0004BC2F /* ActivitiesTableViewCell.swift in Sources */,
+				D883B31A1DFB68E80004BC2F /* ImageController.swift in Sources */,
 				D83BB1FD1DF75A400026DD59 /* CommunityViewController.swift in Sources */,
 				D883B2EB1DF8931C0004BC2F /* APILocalPlaces.swift in Sources */,
 			);
