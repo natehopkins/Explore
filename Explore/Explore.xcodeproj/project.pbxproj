@@ -13,6 +13,9 @@
 		D80FAAF31DF7249F0026BF9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80FAAF21DF7249F0026BF9C /* Assets.xcassets */; };
 		D80FAAF61DF7249F0026BF9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80FAAF41DF7249F0026BF9C /* LaunchScreen.storyboard */; };
 		D80FAAFF1DF728E90026BF9C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80FAAFE1DF728E90026BF9C /* WelcomeViewController.swift */; };
+		D82DB9471E01E52A00F911D0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82DB9461E01E52A00F911D0 /* CloudKit.framework */; };
+		D82DB94A1E02090300F911D0 /* CommunityActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82DB9491E02090300F911D0 /* CommunityActivityController.swift */; };
+		D82DB94C1E0224FE00F911D0 /* PinOnMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82DB94B1E0224FE00F911D0 /* PinOnMapViewController.swift */; };
 		D83BB1FD1DF75A400026DD59 /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83BB1FC1DF75A400026DD59 /* CommunityViewController.swift */; };
 		D84CAF821DF776AA00A9C2E1 /* LocalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84CAF811DF776AA00A9C2E1 /* LocalViewController.swift */; };
 		D883B2DA1DF7DEC20004BC2F /* CreateNewActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2D91DF7DEC20004BC2F /* CreateNewActivityViewController.swift */; };
@@ -21,13 +24,14 @@
 		D883B2E01DF87A4B0004BC2F /* PlacesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2DF1DF87A4B0004BC2F /* PlacesDetailViewController.swift */; };
 		D883B2E21DF87DAB0004BC2F /* ActivitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2E11DF87DAB0004BC2F /* ActivitiesTableViewCell.swift */; };
 		D883B2E41DF88B070004BC2F /* PlacesActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2E31DF88B070004BC2F /* PlacesActivityDetailViewController.swift */; };
-		D883B2E61DF892060004BC2F /* CommunityActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2E51DF892060004BC2F /* CommunityActivities.swift */; };
+		D883B2E61DF892060004BC2F /* CommunityActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2E51DF892060004BC2F /* CommunityActivity.swift */; };
 		D883B2EB1DF8931C0004BC2F /* APILocalPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2EA1DF8931C0004BC2F /* APILocalPlaces.swift */; };
 		D883B2ED1DF893CA0004BC2F /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B2EC1DF893CA0004BC2F /* Activities.swift */; };
 		D883B3141DF9CA3C0004BC2F /* LocalPlacesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B3131DF9CA3C0004BC2F /* LocalPlacesController.swift */; };
 		D883B3161DF9CEA20004BC2F /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B3151DF9CEA20004BC2F /* NetworkController.swift */; };
 		D883B3181DF9FAD20004BC2F /* PlacesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B3171DF9FAD20004BC2F /* PlacesCollectionViewCell.swift */; };
 		D883B31A1DFB68E80004BC2F /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883B3191DFB68E80004BC2F /* ImageController.swift */; };
+		D8EC0E871E00BCFC0028192F /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EC0E861E00BCFC0028192F /* CloudKitManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,10 @@
 		D80FAAF51DF7249F0026BF9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D80FAAF71DF7249F0026BF9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D80FAAFE1DF728E90026BF9C /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		D82DB9421E01E50500F911D0 /* Explore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Explore.entitlements; sourceTree = "<group>"; };
+		D82DB9461E01E52A00F911D0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		D82DB9491E02090300F911D0 /* CommunityActivityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityActivityController.swift; sourceTree = "<group>"; };
+		D82DB94B1E0224FE00F911D0 /* PinOnMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinOnMapViewController.swift; sourceTree = "<group>"; };
 		D83BB1FC1DF75A400026DD59 /* CommunityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
 		D84CAF811DF776AA00A9C2E1 /* LocalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalViewController.swift; sourceTree = "<group>"; };
 		D883B2D91DF7DEC20004BC2F /* CreateNewActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewActivityViewController.swift; sourceTree = "<group>"; };
@@ -47,13 +55,14 @@
 		D883B2DF1DF87A4B0004BC2F /* PlacesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesDetailViewController.swift; path = ../PlacesDetailViewController.swift; sourceTree = "<group>"; };
 		D883B2E11DF87DAB0004BC2F /* ActivitiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewCell.swift; sourceTree = "<group>"; };
 		D883B2E31DF88B070004BC2F /* PlacesActivityDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesActivityDetailViewController.swift; sourceTree = "<group>"; };
-		D883B2E51DF892060004BC2F /* CommunityActivities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommunityActivities.swift; path = ../CommunityActivities.swift; sourceTree = "<group>"; };
+		D883B2E51DF892060004BC2F /* CommunityActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommunityActivity.swift; path = ../CommunityActivity.swift; sourceTree = "<group>"; };
 		D883B2EA1DF8931C0004BC2F /* APILocalPlaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APILocalPlaces.swift; path = ../APILocalPlaces.swift; sourceTree = "<group>"; };
 		D883B2EC1DF893CA0004BC2F /* Activities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Activities.swift; path = ../Activities.swift; sourceTree = "<group>"; };
 		D883B3131DF9CA3C0004BC2F /* LocalPlacesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalPlacesController.swift; sourceTree = "<group>"; };
 		D883B3151DF9CEA20004BC2F /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkController.swift; path = ../NetworkController.swift; sourceTree = "<group>"; };
 		D883B3171DF9FAD20004BC2F /* PlacesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesCollectionViewCell.swift; sourceTree = "<group>"; };
 		D883B3191DFB68E80004BC2F /* ImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
+		D8EC0E861E00BCFC0028192F /* CloudKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D82DB9471E01E52A00F911D0 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +82,7 @@
 			children = (
 				D80FAAEA1DF7249F0026BF9C /* Explore */,
 				D80FAAE91DF7249F0026BF9C /* Products */,
+				D82DB9431E01E52800F911D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,13 +97,14 @@
 		D80FAAEA1DF7249F0026BF9C /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				D82DB9421E01E50500F911D0 /* Explore.entitlements */,
 				D80FAAEF1DF7249F0026BF9C /* Main.storyboard */,
 				D80FAAFE1DF728E90026BF9C /* WelcomeViewController.swift */,
 				D883B2E71DF892F90004BC2F /* Models */,
-				D883B3131DF9CA3C0004BC2F /* LocalPlacesController.swift */,
+				D82DB9481E0208F000F911D0 /* ModelControllers */,
 				D84CAF831DF776D200A9C2E1 /* Local */,
-				D883B31B1DFB68F40004BC2F /* Network Stuff */,
 				D84CAF7E1DF7602000A9C2E1 /* Community */,
+				D883B31B1DFB68F40004BC2F /* Network Stuff */,
 				D80FAAFD1DF725950026BF9C /* Resources */,
 			);
 			path = Explore;
@@ -109,6 +121,23 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		D82DB9431E01E52800F911D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D82DB9461E01E52A00F911D0 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D82DB9481E0208F000F911D0 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D883B3131DF9CA3C0004BC2F /* LocalPlacesController.swift */,
+				D82DB9491E02090300F911D0 /* CommunityActivityController.swift */,
+			);
+			name = ModelControllers;
+			sourceTree = "<group>";
+		};
 		D84CAF7E1DF7602000A9C2E1 /* Community */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +145,7 @@
 				D883B2D91DF7DEC20004BC2F /* CreateNewActivityViewController.swift */,
 				D883B2DB1DF86B020004BC2F /* CommunityDetailTableViewController.swift */,
 				D883B2DD1DF878410004BC2F /* ActivityDetailViewController.swift */,
+				D82DB94B1E0224FE00F911D0 /* PinOnMapViewController.swift */,
 			);
 			name = Community;
 			sourceTree = "<group>";
@@ -138,7 +168,7 @@
 			children = (
 				D883B2EA1DF8931C0004BC2F /* APILocalPlaces.swift */,
 				D883B2EC1DF893CA0004BC2F /* Activities.swift */,
-				D883B2E51DF892060004BC2F /* CommunityActivities.swift */,
+				D883B2E51DF892060004BC2F /* CommunityActivity.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -148,6 +178,7 @@
 			children = (
 				D883B3151DF9CEA20004BC2F /* NetworkController.swift */,
 				D883B3191DFB68E80004BC2F /* ImageController.swift */,
+				D8EC0E861E00BCFC0028192F /* CloudKitManager.swift */,
 			);
 			name = "Network Stuff";
 			sourceTree = "<group>";
@@ -186,6 +217,14 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 6QED5YHBGW;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -226,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D883B2E41DF88B070004BC2F /* PlacesActivityDetailViewController.swift in Sources */,
+				D82DB94C1E0224FE00F911D0 /* PinOnMapViewController.swift in Sources */,
 				D883B2ED1DF893CA0004BC2F /* Activities.swift in Sources */,
 				D883B3141DF9CA3C0004BC2F /* LocalPlacesController.swift in Sources */,
 				D80FAAEC1DF7249F0026BF9C /* AppDelegate.swift in Sources */,
@@ -233,12 +273,14 @@
 				D883B3161DF9CEA20004BC2F /* NetworkController.swift in Sources */,
 				D883B2E01DF87A4B0004BC2F /* PlacesDetailViewController.swift in Sources */,
 				D883B2DE1DF878410004BC2F /* ActivityDetailViewController.swift in Sources */,
+				D8EC0E871E00BCFC0028192F /* CloudKitManager.swift in Sources */,
 				D883B3181DF9FAD20004BC2F /* PlacesCollectionViewCell.swift in Sources */,
 				D883B2DC1DF86B020004BC2F /* CommunityDetailTableViewController.swift in Sources */,
 				D80FAAFF1DF728E90026BF9C /* WelcomeViewController.swift in Sources */,
 				D84CAF821DF776AA00A9C2E1 /* LocalViewController.swift in Sources */,
 				D80405CA1DFF586700D3636C /* DetailTableViewController.swift in Sources */,
-				D883B2E61DF892060004BC2F /* CommunityActivities.swift in Sources */,
+				D82DB94A1E02090300F911D0 /* CommunityActivityController.swift in Sources */,
+				D883B2E61DF892060004BC2F /* CommunityActivity.swift in Sources */,
 				D883B2E21DF87DAB0004BC2F /* ActivitiesTableViewCell.swift in Sources */,
 				D883B31A1DFB68E80004BC2F /* ImageController.swift in Sources */,
 				D83BB1FD1DF75A400026DD59 /* CommunityViewController.swift in Sources */,
@@ -365,6 +407,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Explore/Explore.entitlements;
 				DEVELOPMENT_TEAM = 6QED5YHBGW;
 				INFOPLIST_FILE = Explore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -378,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Explore/Explore.entitlements;
 				DEVELOPMENT_TEAM = 6QED5YHBGW;
 				INFOPLIST_FILE = Explore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

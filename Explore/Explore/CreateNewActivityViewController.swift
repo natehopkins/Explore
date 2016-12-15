@@ -7,8 +7,16 @@
 //
 
 import UIKit
+import MapKit
 
 class CreateNewActivityViewController: UIViewController {
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var locationTextField: UITextField!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var seasonTextField: UITextField!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +31,10 @@ class CreateNewActivityViewController: UIViewController {
 
     @IBAction func addButtonTapped(_ sender: Any) {
         
-        // Do Stuff
+        // Create CommunityActivity based on what is in the view
+        
+            // need Name, photoData, locationString, locationLat, locationLon, description, seasonString
+        
         // Clear TextFields
         // Pop
         
