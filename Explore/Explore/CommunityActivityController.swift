@@ -8,19 +8,23 @@
 
 import Foundation
 import CloudKit
+import UIKit
 
 class CommunityActivityController {
-    // function to pull from cloudkit
     
-    
+    let cloudKitManager: CloudKitManager
     init() {
         self.cloudKitManager = CloudKitManager()
     }
     
-    let cloudKitManager: CloudKitManager
+    static let shared = CommunityActivityController()
+    
+    let arrayOfCommunityActivities: [CommunityActivity] = []
+    
+    // function to pull from cloudkit
     
     func createCommunityActivityFrom(record: CKRecord, completion: @escaping () -> Void) {
-        
+    
     }
     
     func saveToCloudKitWith(activity: CommunityActivity, completion: @escaping () -> Void) {
@@ -35,4 +39,20 @@ class CommunityActivityController {
     }
     // function to save to cloudKit
     
+    func createNewCommunityActivityAndSaveToCloudKit(name: String, location: String, locationLat: Float, locationLon: Float, description: String, season: String, image: UIImage) {
+        guard let image = UIImagePNGRepresentation(image) else { return }
+        
+        let communityActivity = CommunityActivity(name: name, photoData: image, location: location, locationLat: locationLat, locationLon: locationLon, description: description, season: season)
+        let communityActivityRecord = CKRecord(communityActivity: communityActivity)
+        
+        cloudKitManager.saveRecord(communityActivityRecord) { (record, error) in
+            if let error = error {
+                print("Error saving the record to cloudkit:")
+                print(error.localizedDescription)
+            }
+            if error == nil {
+                print("Succesfully saved post to cloudkit")
+            }
+        }
+    }
 }
